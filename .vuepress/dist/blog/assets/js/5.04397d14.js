@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{222:function(e,t,n){"use strict";n.r(t);var i=n(0),s=Object(i.a)({},function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("Copyright © 2018-"+this._s((new Date).getFullYear()))])},[],!1,null,null,null);s.options.__file="footer-date.vue";t.default=s.exports}}]);
