@@ -76,7 +76,10 @@ module.exports = {
                 {
                     title: 'Vue',
                     children: [
-                        ['/article/front-end/vue/', '@vue/cli的安装使用']
+                        ['/article/front-end/vue/', '@vue/cli的安装使用'],
+                        ['/article/front-end/vue/使用vuecli3与ts搭建项目一—创建', '使用vuecli3与ts搭建项目—创建(一)'],
+                        ['/article/front-end/vue/使用vuecli3与ts搭建项目二—vue组件中的写法', '使用vuecli3与ts搭建项目—vue组件中的写法(二)'],
+                        ['/article/front-end/vue/打造一款在线编辑器', '打造一款在线编辑器']
                     ]
                 },
                 {

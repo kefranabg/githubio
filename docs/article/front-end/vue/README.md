@@ -1,4 +1,4 @@
-## @vue/cli的安装使用
+# @vue/cli的安装使用
 
 ### @vue/cli的介绍
 ::: warning 警告
