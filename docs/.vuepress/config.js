@@ -13,29 +13,21 @@ module.exports = {
         // per_page: 6,
         searchMaxSuggestions: 10,
         lastUpdated: '最后更新时间',
+        smoothScroll: true,
+        displayAllHeaders: false,
         nav: [
             { text: '首页', link: '/' },
             {
                 text: '技术分享',
                 items: [
                     { text: '前端文章', link: '/article/front-end/' },
-                    // { text: 'UI', link: '/article/ui/' },
                     { text: 'GIT', link: '/article/git/' },
                     { text: 'nodejs', link: '/article/nodejs/' },
                     { text: 'python', link: '/article/python/' },
                     { text: 'mysql', link: '/article/mysql/' },
-                    // { text: '服务器', link: '/article/serve/' },
-                    { text: 'CTF', link: '/article/ctf/' },
-                    // { text: 'KALI', link: '/article/kali/' }
+                    { text: 'CTF', link: '/article/ctf/' }
                 ]
             },
-            // {
-            //     text: '其他',
-            //     items: [
-            //         { text: '小故事', link: '/storylove/story/' },
-            //         { text: '爱好', link: '/storylove/love/' }
-            //     ]
-            // },
             {
                 text: '关于我',
                 items: [
@@ -49,9 +41,9 @@ module.exports = {
         sidebar: {
             '/article/front-end/': [
                 {
-                    title: 'Html',   // 必要的
+                    title: 'HTML',
                     children: [
-                        ['/article/front-end/', 'Web前端开发工程师编程能力飞升之路'],
+                        ['/article/front-end/Web前端开发工程师编程能力飞升之路', 'Web前端开发工程师编程能力飞升之路'],
                         ['/article/front-end/html/SEO关键词', 'SEO关键词'],
                         ['/article/front-end/html/从输入url到显示网页发生了什么', '从输入url到显示网页发生了什么'],
                         ['/article/front-end/html/你应该知道的前端——缓存', '你应该知道的前端——缓存'],
@@ -63,41 +55,23 @@ module.exports = {
                 {
                     title: 'JS',
                     children: [
-                        ['/article/front-end/js/', 'Js小工具'],
-                        ['/article/front-end/js/一个原生js压缩图片的功能', '一个原生js压缩图片的功能']
+                        ['/article/front-end/js/', 'JS utils'],
+                        ['/article/front-end/js/压缩图片', '压缩图片']
                     ]
                 },
                 {
                     title: 'CSS',
                     children: [
-                        ['/article/front-end/css/', 'Css']
+                        ['/article/front-end/css/', 'CSS样式重置']
                     ]
                 },
                 {
-                    title: 'Vue',
+                    title: 'VUE',
                     children: [
                         ['/article/front-end/vue/', '@vue/cli的安装使用'],
                         ['/article/front-end/vue/使用vuecli3与ts搭建项目一—创建', '使用vuecli3与ts搭建项目—创建(一)'],
                         ['/article/front-end/vue/使用vuecli3与ts搭建项目二—vue组件中的写法', '使用vuecli3与ts搭建项目—vue组件中的写法(二)'],
                         ['/article/front-end/vue/打造一款在线编辑器', '打造一款在线编辑器']
-                    ]
-                },
-                {
-                    title: 'LESS',
-                    children: [
-                        ['/article/front-end/less/', 'Less']
-                    ]
-                },
-                {
-                    title: 'WEBPACK',
-                    children: [
-                        ['/article/front-end/webpack/', 'Webpack']
-                    ]
-                },
-                {
-                    title: 'GULP',
-                    children: [
-                        ['/article/front-end/gulp/', 'Gulp']
                     ]
                 }
             ],
@@ -115,6 +89,8 @@ module.exports = {
             ]
         }
     },
-    sidebarDepth: 2,
-    displayAllHeaders: false
+    markdown: {
+        lineNumbers: true
+    },
+    sidebarDepth: 2
 }
